@@ -1,6 +1,11 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+
+  const {
+    contactPageSelected,
+    setContactPageSelected,
+  } = props;
 
   return (
     <header className ="flex-row paddingSpace-1">
@@ -13,7 +18,8 @@ function Nav() {
             </a>
           </li>
           <li className="marginSpace-2"><span> Portfolio </span></li>
-          <li className="marginSpace-2"><span> Contact </span></li>
+          <li className={`marginSpace-2 ${contactPageSelected && 'navActive'}`}>
+            <span onClick={() => setContactPageSelected(true)}> Contact </span></li>
           <li className="marginSpace-2"><span> Resume </span></li>
         </ul>
       </nav>
