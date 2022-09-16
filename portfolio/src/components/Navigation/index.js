@@ -9,12 +9,12 @@ function Nav() {
         <ul className="flex-row">
           <li className="marginSpace-2">
             <a href="about">
-              About Me
+              AboutMe
             </a>
           </li>
-          <li><span> Portfolio </span></li>
-          <li><span> Contact </span></li>
-          <li><span> Resume </span></li>
+          <li className="marginSpace-2"><span> Portfolio </span></li>
+          <li className="marginSpace-2"><span> Contact </span></li>
+          <li className="marginSpace-2"><span> Resume </span></li>
         </ul>
       </nav>
     </header>
