@@ -2,29 +2,20 @@ import React from 'react';
 
 function Nav(props) {
 
-  const {
-    contactPageSelected,
-    setContactPageSelected,
-  } = props;
+  const { tabs = [], setCurrentTab, currentTab } = props;
 
+  // Reference: 2U Boot Camp Tutor Meg Meyers
   return (
-    <header className ="flex-row paddingSpace-1">
-      <h2>My Awesome Portfolio!</h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="marginSpace-2">
-            <a href="about">
-              AboutMe
-            </a>
+    <nav>
+      <ul>
+        {tabs.map((Tabs) => (
+          <li className={`${currentTab.name === Tabs.name && "highlight"}`} key={Tabs.name}>
+            <span onClick={() => setCurrentTab(Tabs)}>{Tabs.name}</span>
           </li>
-          <li className="marginSpace-2"><span> Portfolio </span></li>
-          <li className={`marginSpace-2 ${contactPageSelected && 'navActive'}`}>
-            <span onClick={() => setContactPageSelected(true)}> Contact </span></li>
-          <li className="marginSpace-2"><span> Resume </span></li>
-        </ul>
-      </nav>
-    </header>
-  )
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 export default Nav;

@@ -6,6 +6,7 @@ main {
 :root {
   --primary: #B68A78ff;
   --secondary: #4D4947ff;
+  --second-color: #d9f744;
   --tertiary: #363E31ff;
   --light: #fafafa;
   --dark: #000000;
@@ -311,4 +312,14 @@ a {
   margin-left: 20px; 
   margin-right: 20px;
   
+}
+
+.highlight {
+  background-color: var(--second-color);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.content {
+  flex: 1 0 auto;
 }

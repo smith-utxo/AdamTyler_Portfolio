@@ -1,30 +1,44 @@
 import React, { useState } from 'react';
 import './App.css';
-import AboutMe from './components/AboutMe';
+import Tabs from '../src/components/Tabs';
 import Nav from '../src/components/Navigation';
-import ContactForm from './components/Contact';
 import Footer from '../src/components/Footer';
-
-
+import Header from '../src/components/Header';
 
 
 function App() {
 
-  const [contactPageSelected, setContactPageSelected] = useState(false);
+  const [tabs] = useState([
+    {
+      name: "AboutMe"
+    }, 
+    {
+      name: "Contact"
+    }, 
+    {
+      name: "Portfolio"
+    }, 
+    {
+      name: "Resume"
+    }
+  ]);
+
+  const [currentTab, setCurrentTab ] = useState(tabs[0]);
 
    return (
-    <div>
+    <div className="content">
+      <header>
+        <Header>
       <Nav
-        contactPageSelected={contactPageSelected}
-        setContactPageSelected={setContactPageSelected}
+        tabs={tabs}
+        currentTab={currentTab}
+        setCurrentTab={setCurrentTab}
       ></Nav>
+      </Header>
+      </header>
       <main>
-        {!contactPageSelected ? (
-        <AboutMe></AboutMe> 
-      
-        ) : (
-        <ContactForm></ContactForm>
-        )}
+        <Tabs currentTab={currentTab}></Tabs>
+        
       </main>
       <Footer></Footer>
     </div>
