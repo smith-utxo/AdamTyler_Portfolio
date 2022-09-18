@@ -3,6 +3,9 @@ import './App.css';
 import AboutMe from './components/AboutMe';
 import Nav from '../src/components/Navigation';
 import ContactForm from './components/Contact';
+import Footer from '../src/components/Footer';
+
+
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
         <ContactForm></ContactForm>
         )}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
