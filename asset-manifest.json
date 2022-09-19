@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AdamTyler_Portfolio/static/css/main.053b8b65.css",
+    "main.js": "/AdamTyler_Portfolio/static/js/main.b7a6693f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/AdamTyler_Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/headshot.PNG": "/AdamTyler_Portfolio/static/media/headshot.e99daba0ddc00028603e.PNG",
+    "static/media/04_Run-buddy.PNG": "/AdamTyler_Portfolio/static/media/04_Run-buddy.e849b9044b0e92115355.PNG",
+    "static/media/02_WeatherDashboard.PNG": "/AdamTyler_Portfolio/static/media/02_WeatherDashboard.2cc98455686242dd2013.PNG",
+    "static/media/01_SudsOnSale.PNG": "/AdamTyler_Portfolio/static/media/01_SudsOnSale.863cad8bd64bb6ace4d9.PNG",
+    "static/media/03_Social_Network_Api.PNG": "/AdamTyler_Portfolio/static/media/03_Social_Network_Api.e4d066db5b8560d54478.PNG",
+    "static/media/06_Code_Quiz.png": "/AdamTyler_Portfolio/static/media/06_Code_Quiz.eadb389cd0d6d74b4e40.png",
+    "static/media/05_Workday Scheduler.png": "/AdamTyler_Portfolio/static/media/05_Workday Scheduler.9843724cc970c0ce2e5c.png",
+    "index.html": "/AdamTyler_Portfolio/index.html",
+    "main.053b8b65.css.map": "/AdamTyler_Portfolio/static/css/main.053b8b65.css.map",
+    "main.b7a6693f.js.map": "/AdamTyler_Portfolio/static/js/main.b7a6693f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/AdamTyler_Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.053b8b65.css",
+    "static/js/main.b7a6693f.js"
+  ]
+}
