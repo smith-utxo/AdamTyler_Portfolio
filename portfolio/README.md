@@ -4,6 +4,9 @@ A portfolio showcasing my work built as a single page application using React. M
 ## ScreenShot
 ![](public/screenshot.PNG)
 
+## Deployed URL: 
+http://smith-utxo.github.io/AdamTyler_Portfolio 
+
 
 ## Github URL: 
 https://github.com/smith-utxo/AdamTyler_Portfolio/tree/main/portfolio
