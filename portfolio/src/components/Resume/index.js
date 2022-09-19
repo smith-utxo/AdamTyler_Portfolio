@@ -17,7 +17,7 @@ function Resume() {
         <li>=> ORM, MVC and PWA</li>
       </ul>
 
-      <a href="https://drive.google.com/file/d/1qruRXsXeEDEto3AN-SpLRQOI6BLj78uR/view?usp=sharing" className="brightpink" target="_blank" rel="noreferrer">Download my resume.</a>
+      <a href="https://drive.google.com/file/d/1qruRXsXeEDEto3AN-SpLRQOI6BLj78uR/view?usp=sharing" className="brightpink" target="_blank" rel="noreferrer">Download My Resume Here</a>
 
 
     </section>

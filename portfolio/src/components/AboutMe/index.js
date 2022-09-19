@@ -10,13 +10,7 @@ function AboutMe() {
       </div>
       <div className="Margin-10">
         <h4>
-          okay ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+          I have a diverse background with nearly a decade of experience in healthcare administration and a bachelor of science in marketing. I completed a certification in full-stack web development at the U of M in 2022. My web development education included both front-end and back-end technologies with a focus on the MERN stack. I take pride in having a good work ethic and value open and honest communication. I look forward to beginning a career that continously challenges my skills and demands constant learning to keep up with an ever evolving landscape.
         </h4>
       </div>
     </section>
