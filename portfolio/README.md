@@ -1,5 +1,5 @@
 ## Purpose
-A portfolio showcasing my work built as a single page application using React. Main Components include an AboutMe, Resume, Work Portoflio containing 6 recent projects, and a Contact Me Section. 
+A portfolio showcasing my work built as a single page application using React. Main Components include an AboutMe, Resume, Contact Me section, and a work portflio comprised of 6 recent projects. 
 
 ## ScreenShot
 ![](public/screenshot.PNG)
