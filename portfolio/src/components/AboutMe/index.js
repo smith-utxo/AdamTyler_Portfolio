@@ -10,7 +10,7 @@ function AboutMe() {
       </div>
       <div className="Margin-10">
         <h4>
-          I have a diverse background with nearly a decade of experience in healthcare administration and a bachelor of science in marketing. I completed a certification in full-stack web development at the U of M in 2022. My web development education included both front-end and back-end technologies with a focus on the MERN stack. I take pride in having a good work ethic and value open and honest communication. I look forward to beginning a career that continously challenges my skills and demands constant learning to keep up with an ever evolving landscape.
+        Web developer trained in agile methodology that leverages quality improvement background to deliver reliable and intuitive applications. Recently obtained a certificate in full stack development from the University of Minnesota with a focus on the MERN stack. I consider myself a lifelong learner with a strong desire to continue improving my abilities and the projects I work on. I believe perfection is a fallacy and instead strive for continuous improvement. I enjoy building accessible and responsive websites that engage every user. I'm well positioned to leverage my diverse background and skill set to create exceptional user experiences.
         </h4>
       </div>
     </section>
