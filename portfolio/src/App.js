@@ -5,6 +5,11 @@ import Nav from '../src/components/Navigation';
 import Footer from '../src/components/Footer';
 import Header from '../src/components/Header';
 
+// this file is repsonsible for the following: 
+/* This file defines the main component of the React application, which manages the state of the tabs and renders the Header,
+ Navigation, Tabs, and Footer components. It uses the useState hook to manage the current active tab and passes necessary props to child components 
+ for rendering and interaction. */
+
 
 function App() {
 

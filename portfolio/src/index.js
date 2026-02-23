@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/* This file is responsible for rendering the main React application (App) into the DOM,
+ specifically targeting the HTML element with the ID root.
+  It also includes the setup for measuring performance metrics using reportWebVitals */
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

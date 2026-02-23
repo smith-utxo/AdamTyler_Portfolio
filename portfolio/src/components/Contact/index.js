@@ -1,20 +1,49 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { validateEmail } from '../../utils/helpers';
 
+const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 function ContactForm() {
 
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
   const [errorMessage, setErrorMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
   const { name, email, message } = formState;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
+
+    if (!name || !email || !message) {
+      setErrorMessage('All fields are required.');
+      return;
     }
-  }
+
+    if (errorMessage) return;
+
+    setIsSending(true);
+    setSuccessMessage('');
+
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        from_name: name,
+        name: name,
+        from_email: email,
+        message: message,
+        time: new Date().toLocaleString(),
+      }, PUBLIC_KEY);
+
+      setSuccessMessage('Message sent successfully!');
+      setFormState({ name: '', email: '', message: '' });
+    } catch (error) {
+      setErrorMessage('Failed to send message. Please try again later.');
+    } finally {
+      setIsSending(false);
+    }
+  };
 
   const handleChange = (e) => {
     if (e.target.name === "email") {
@@ -33,7 +62,6 @@ function ContactForm() {
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
     }
   };
 
@@ -41,9 +69,6 @@ function ContactForm() {
     <section>
       <h1>Contact Me</h1>
       <form id="contact-form" onSubmit={handleSubmit} >
-        {/* Due to keywords reserved in JavaScript, we need to replace the for attribute in the label element to htmlFor.
-
-onBlur Event is triggered when an object loses focus. Used most often with form validation code (e.g. when the user leave a form field something happens; an error message, change to all lowercase, etc. */}
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -58,16 +83,24 @@ onBlur Event is triggered when an object loses focus. Used most often with form 
           <label htmlFor="message">Message:</label>
           <textarea name="message" rows="6" defaultValue={message} onBlur={handleChange} />
         </div>
-        {/* if error message has a truth value, the div block will render. the && operator is being used here as short circuit meaning if the first value resolves to true, the second expression is evaluated. */}
+
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
 
-        <button data-testid="button" type="submit">Submit</button>
+        {successMessage && (
+          <div>
+            <p className="success-text">{successMessage}</p>
+          </div>
+        )}
+
+        <button data-testid="button" type="submit" disabled={isSending}>
+          {isSending ? 'Sending...' : 'Submit'}
+        </button>
       </form>
     </section>
-  )
+  );
 }
 export default ContactForm; 
